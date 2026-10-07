@@ -1,0 +1,2 @@
+Car 101 Toyota Swift 2078 500 1 4
+Bike 102 Bajaj Pulsar 2080 100 1 180

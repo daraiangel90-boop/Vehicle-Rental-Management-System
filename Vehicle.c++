@@ -130,10 +130,7 @@ public:
     bool returned;      // false = still with customer, true = given back
 };
  
- 
-// ---------------------------------------------------
 //  DATA (arrays to store everything)
-// ---------------------------------------------------
  
 const int MAX_VEHICLES = 100;
 const int MAX_CUSTOMERS = 100;
@@ -151,10 +148,6 @@ int totalRentals = 0;
 const string ADMIN_USER = "admin";
 const string ADMIN_PASS = "admin123";
  
- 
-// ---------------------------------------------------
-//  SMALL HELPER FUNCTIONS
-// ---------------------------------------------------
  
 // asks for a whole number and keeps asking until the user types a valid one
 int getInt(string message) {
@@ -196,12 +189,9 @@ void printVehicleHeader() {
     cout << "--------------------------------------------------------------------------\n";
 }
  
- 
-// ---------------------------------------------------
 //  FILE HANDLING (save and load data)
-// ---------------------------------------------------
- 
-void saveVehicles() {
+
+ void saveVehicles() {
     ofstream f("vehicles.txt");
     for (int i = 0; i < totalVehicles; i++) {
         vehicles[i]->save(f);
@@ -272,10 +262,7 @@ void loadRentals() {
     f.close();
 }
  
- 
-// ---------------------------------------------------
 //  ADMIN FUNCTIONS
-// ---------------------------------------------------
  
 void addVehicle() {
     cout << "\n--- Add Vehicle ---\n";
@@ -415,10 +402,7 @@ void adminMenu() {
     } while (choice != 6);
 }
  
- 
-// ---------------------------------------------------
 //  CUSTOMER FUNCTIONS
-// ---------------------------------------------------
  
 void viewAvailableVehicles() {
     bool found = false;
@@ -649,10 +633,7 @@ bool isValidEmail(string email) {
     return true;
 }
  
- 
-// ---------------------------------------------------
 //  REGISTER AND LOGIN
-// ---------------------------------------------------
  
 void registerCustomer() {
     if (totalCustomers >= MAX_CUSTOMERS) {
