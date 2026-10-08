@@ -181,7 +181,7 @@ Vehicle *findVehicle(int id) {
         }
     }
     return NULL;
-}
+}  
  
 // prints the heading line of the vehicle table
 void printVehicleHeader() {
@@ -596,7 +596,7 @@ bool isValidPhone(string phone) {
 // Email is correct when it looks like  name@domain.com
 bool isValidEmail(string email) {
     int length = email.length();
-    int atCount = 0;       // how many @ are there
+    int atCount = 0;       
     int atPosition = -1;   // where the @ is
     int lastDot = -1;      // where the last . is
  
