@@ -593,7 +593,7 @@ bool isValidPhone(string phone) {
     return true;
 }
  
-// Email is correct when it looks like  name@domain.com
+// Email is correct when it looks like this: name@domain.com
 bool isValidEmail(string email) {
     int length = email.length();
     int atCount = 0;       
