@@ -720,7 +720,7 @@ void customerLogin() {
     cout << "Invalid username or password!\n";
 }
  
-//  MAIN FUNCTION (program starts here)
+//  MAIN FUNCTION 
  
 int main() {
     // load the old saved data from the files
