@@ -723,7 +723,7 @@ void customerLogin() {
 //  MAIN FUNCTION 
  
 int main() {
-    // load the old saved data from the files
+    // load the old saved data from files
     loadVehicles();
     loadCustomers();
     loadRentals();
